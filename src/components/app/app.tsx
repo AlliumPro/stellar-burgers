@@ -100,7 +100,10 @@ const App = () => {
               <Route
                 path='/feed/:number'
                 element={
-                  <Modal title='Детали заказа' onClose={handleModalClose}>
+                  <Modal
+                    title={`#${location.pathname.match(/\d+/)?.[0]}`}
+                    onClose={handleModalClose}
+                  >
                     <OrderInfo />
                   </Modal>
                 }
@@ -117,7 +120,10 @@ const App = () => {
                 path='/profile/orders/:number'
                 element={
                   <ProtectedRoute>
-                    <Modal title='Детали заказа' onClose={handleModalClose}>
+                    <Modal
+                      title={`#${location.pathname.match(/\d+/)?.[0]}`}
+                      onClose={handleModalClose}
+                    >
                       <OrderInfo />
                     </Modal>
                   </ProtectedRoute>
