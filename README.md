@@ -15,6 +15,19 @@
 
 ---
 
+## Screenshots
+
+### Конструктор бургера
+![Конструктор бургера](docs/screenshots/constructor.png)
+
+### Лента заказов
+![Лента заказов](docs/screenshots/feed.png)
+
+### Вход
+<img src="docs/screenshots/login.png" alt="Страница входа" width="500">
+
+---
+
 ## Key Features
 
 ### Конструктор бургера
